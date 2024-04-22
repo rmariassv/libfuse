@@ -28,7 +28,7 @@ install -D -m 644 "${MESON_SOURCE_ROOT}/util/fuse.conf" \
 	"${DESTDIR}${sysconfdir}/fuse.conf"
 
 if $useroot; then
-    chown root:root "${DESTDIR}${bindir}/fusermount3"
+    # chown root:root "${DESTDIR}${bindir}/fusermount3"
     chmod u+s "${DESTDIR}${bindir}/fusermount3"
 
     if test ! -e "${DESTDIR}/dev/fuse"; then
