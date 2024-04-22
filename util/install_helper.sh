@@ -33,7 +33,7 @@ if $useroot; then
 
     if test ! -e "${DESTDIR}/dev/fuse"; then
         mkdir -p "${DESTDIR}/dev"
-        mknod "${DESTDIR}/dev/fuse" -m 0666 c 10 229
+        # mknod "${DESTDIR}/dev/fuse" -m 0666 c 10 229
     fi
 fi
 
